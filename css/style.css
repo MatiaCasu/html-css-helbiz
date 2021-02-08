@@ -1,0 +1,59 @@
+/* DeBUG */
+.debug [class*= "nav_"]{
+  background-color: white;
+  border: 1px solid black;
+}
+/* /DeBUG */
+
+/* MIX */
+.list_inline > li, .list_inline a{
+  display: inline-block;
+}
+
+ul.list_inline{
+  margin: 0;
+}
+
+a, a:hover{
+  text-decoration: none;
+  color: inherit;
+}
+/* /MIX */
+
+/* NAV */
+.nav_list, .nav_login{
+  display: inline-block;
+  font-size: 10px;
+}
+
+.nav_logo, .nav_list, .nav_login{
+  padding: 20px 0;
+}
+
+.nav_logo img{
+  height: 15px;
+}
+
+.nav_list li{
+  margin: 0 20px;
+}
+
+.nav_login li{
+  margin: 0 2px;
+}
+
+.nav_login .btn{
+  border-radius: 0;
+}
+
+.btn.login{
+  background-color: #000;
+  color: #fff;
+}
+
+.btn.languages{
+  padding: 0 5px;
+  border-left:solid black 1px;
+  border-right:solid black 1px;
+  font-size: 10px;
+}
