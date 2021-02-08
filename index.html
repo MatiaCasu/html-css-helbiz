@@ -12,20 +12,21 @@
     <!-- /style css-->
     <!-- google font-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600;700&display=swap" rel="stylesheet">
     <!-- google font -->
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <!-- /font awesome -->
     <title>Helbiz</title>
   </head>
-  <body class="debug">
+  <body>
     <header>
       <div class="container">
         <div class="row text-right text-uppercase">
           <div class="col-xs-2">
-            <div class=" nav_logo text-left">
+            <a href="#" class=" nav_logo text-left">
               <img src="img/logo-nav.svg" alt="">
-            </div>
+            </a>
           </div>
           <nav class="col-xs-10">
             <div class=" nav_list">
@@ -50,12 +51,15 @@
             <div class="nav_login">
               <ul class="list_inline">
                 <li>
-                  <a class="btn languages" href="#">ita</a>
+                  <a class="btn languages" href="#">ita <i class="fas fa-angle-down"></i></a>
                 </li>
                 <li>
-                  <a class="btn login" href="#">login</a>
+                  <a class="btn login text-capitalize" href="#">login</a>
                 </li>
               </ul>
+            </div>
+            <div class="btn nav_menu">
+              <p><i class="fas fa-bars"></i></p>
             </div>
           </nav>
         </div>

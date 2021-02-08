@@ -12,26 +12,30 @@
 
 ul.list_inline{
   margin: 0;
+  padding: 0;
 }
 
 a, a:hover{
   text-decoration: none;
   color: inherit;
 }
+
 /* /MIX */
 
 /* NAV */
-.nav_list, .nav_login{
-  display: inline-block;
-  font-size: 10px;
-}
-
 .nav_logo, .nav_list, .nav_login{
   padding: 20px 0;
+  display: inline-block;
 }
 
 .nav_logo img{
   height: 15px;
+}
+
+.nav_list, .nav_login{
+  font-size: 12px;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .nav_list li{
@@ -42,18 +46,43 @@ a, a:hover{
   margin: 0 2px;
 }
 
+/* Bottoni Nav */
 .nav_login .btn{
+  display: inline-block;
   border-radius: 0;
 }
 
 .btn.login{
   background-color: #000;
   color: #fff;
+  font-size: 14px;
+  margin-left: 10px;
 }
 
 .btn.languages{
-  padding: 0 5px;
+  padding: 0 10px;
   border-left:solid black 1px;
   border-right:solid black 1px;
-  font-size: 10px;
+  font-size: 12px;
+  font-weight: 700;
 }
+
+.btn.nav_menu{
+  display: none;
+  padding: 0 10px;
+  font-size: 25px;
+  color: grey;
+}
+/* /Bottoni Nav */
+
+@media screen and (max-width: 992px) {
+  .nav_list, .nav_login > ul{
+    display: none;
+  }
+
+  .btn.nav_menu{
+    display: inline-block;
+  }
+
+}
+/* /NAV */
