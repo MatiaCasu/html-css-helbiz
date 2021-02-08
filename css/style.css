@@ -4,6 +4,9 @@
   border: 1px solid black;
 }
 /* /DeBUG */
+body{
+  color: black;
+}
 
 /* MIX */
 .list_inline > li, .list_inline a{
@@ -86,3 +89,21 @@ a, a:hover{
 
 }
 /* /NAV */
+
+/* HERO */
+.hero h1{
+  font-size: 110px;
+  padding-top: 60px;
+  font-weight: 700;
+}
+
+.hero img{
+  width: 100%;
+}
+
+@media screen and (max-width: 992px) {
+  .hero h1{
+    font-size: 80px;
+  }
+}
+/* /HERO */
