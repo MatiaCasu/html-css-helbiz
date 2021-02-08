@@ -3,9 +3,22 @@
   background-color: white;
   border: 1px solid black;
 }
+.debug .container{
+  border: 1px solid red;
+}
+
+/* .debug [class*="col-"]{
+  border: 1px solid black;
+} */
+
+section{
+  margin-top: 30px;
+}
+
 /* /DeBUG */
 body{
   color: black;
+  font-family: 'Open Sans', sans-serif;
 }
 
 /* MIX */
@@ -18,11 +31,20 @@ ul.list_inline{
   padding: 0;
 }
 
-a, a:hover{
+a:hover{
   text-decoration: none;
   color: inherit;
 }
 
+a{
+  color: inherit;
+}
+
+.clearfix::after{
+  display: block;
+  content: "";
+  clear: both;
+}
 /* /MIX */
 
 /* NAV */
@@ -37,8 +59,7 @@ a, a:hover{
 
 .nav_list, .nav_login{
   font-size: 12px;
-  font-weight: 700;
-  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
 }
 
 .nav_list li{
@@ -60,6 +81,7 @@ a, a:hover{
   color: #fff;
   font-size: 14px;
   margin-left: 10px;
+  font-weight: 700;
 }
 
 .btn.languages{
@@ -67,7 +89,6 @@ a, a:hover{
   border-left:solid black 1px;
   border-right:solid black 1px;
   font-size: 12px;
-  font-weight: 700;
 }
 
 .btn.nav_menu{
@@ -107,3 +128,30 @@ a, a:hover{
   }
 }
 /* /HERO */
+
+/* SEZIONE 1 #product_categories */
+#product_categories .box_product{
+  background-color: #f9f9f9;
+  margin: 50px 0;
+  padding: 80px 10px 20px;
+}
+
+#product_categories p, #product_categories a{
+  font-size: 20px;
+  margin: 30px 0;
+}
+
+#product_categories a{
+  color: #0070c8;
+}
+
+.categories_logo{
+  height: 20px;
+}
+
+.categories_img img{
+  height: 300px;
+  margin-top: 30px;
+  max-width: 100%;
+}
+/* /SEZIONE 1 #product_categories */
