@@ -157,16 +157,20 @@ a{
 /* /SEZIONE 1 #product_categories */
 
 /* SEZIONE 2 #how */
-section#how{
+.carousel_bg{
+  position: absolute;
+  width: 100%;
+  height: 500px;
   background-image: url(../img/banner.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 30%;
 }
 
 /* CAROUSEL */
 .carousel_box{
-  max-width: 60%;
-  margin: 0 auto 50px;
+  max-width: 70%;
+  margin: 0px auto;
+  padding-top: 200px;
 }
 
 .carousel_box > .box{
@@ -174,32 +178,31 @@ section#how{
   vertical-align: bottom;
   margin: 0 10px;
   width: calc( ( 100% / 3 ) - 26px );
+  position: relative;
 }
 
 .box.center_carousel img{
   height: 500px;
-  width: auto;
+  width: 100%;
   background-color: #fff;
   border-radius: 40px;
+  vertical-align: bottom;
 }
 
 .box.center_carousel{
-  margin-top: 100px;
   height: 500px;
 }
 
 .box.left_carousel h3{
   font-size: 35px;
   font-weight: 700;
-  padding-right: 30px;
-  line-height: 30px;
-  padding-bottom: 50px;
+  line-height: 50px;
+  margin-bottom: 50px;
 }
 
 .box.right_carousel{
-  padding-left: 30px;
   font-size: 18px;
-  padding-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .box.right_carousel h6{
@@ -207,5 +210,43 @@ section#how{
   font-weight: 700;
 }
 
+.box.left_carousel{
+  position: relative;
+  right: calc( ( 100% / 3 ) - 10px );
+}
+
+.box.center_carousel{
+  position: relative;
+  left: calc( ( 100% / 3 ) - 10px );
+}
+
+@media screen and (max-width:991px) {
+  .carousel_box > .box{
+    width: 100%;
+  }
+
+  .box.left_carousel{
+    position: relative;
+    right: 0;
+  }
+
+  .box.center_carousel{
+    position: relative;
+    left: 0;
+  }
+
+  .box.left_carousel h3{
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 50px 0 0;
+  }
+  .box.center_carousel img{
+    width: 50%;
+
+  }
+
+
+}
 
 /* /SEZIONE 2 #how */
