@@ -39,12 +39,6 @@ a:hover{
 a{
   color: inherit;
 }
-
-.clearfix::after{
-  display: block;
-  content: "";
-  clear: both;
-}
 /* /MIX */
 
 /* NAV */
@@ -113,18 +107,24 @@ a{
 
 /* HERO */
 .hero h1{
-  font-size: 110px;
+  font-size: 80px;
   padding-top: 60px;
   font-weight: 700;
 }
 
-.hero img{
+.hero_img{
+  width: 80%;
+  margin: 0px auto;
+  margin-top: 20px;
+}
+
+.hero_img img{
   width: 100%;
 }
 
 @media screen and (max-width: 992px) {
   .hero h1{
-    font-size: 80px;
+    font-size: 50px;
   }
 }
 /* /HERO */
@@ -132,7 +132,7 @@ a{
 /* SEZIONE 1 #product_categories */
 #product_categories .box_product{
   background-color: #f9f9f9;
-  margin: 50px 0;
+  margin: 30px 0;
   padding: 80px 10px 20px;
 }
 
@@ -168,7 +168,7 @@ a{
 
 /* CAROUSEL */
 .carousel_box{
-  max-width: 70%;
+  max-width: 60%;
   margin: 0px auto;
   padding-top: 200px;
 }
@@ -176,48 +176,43 @@ a{
 .carousel_box > .box{
   display: inline-block;
   vertical-align: bottom;
-  margin: 0 10px;
-  width: calc( ( 100% / 3 ) - 26px );
-  position: relative;
+}
+
+.left_carousel, .right_carousel{
+  width: calc( ( 50% - 125px ) - 6px );
+  min-height: 200px;
+  padding: 10px 20px;
 }
 
 .box.center_carousel img{
   height: 500px;
-  width: 100%;
+  width: 250px;
   background-color: #fff;
   border-radius: 40px;
-  vertical-align: bottom;
+}
+
+.box.left_carousel{
+  position: relative;
+  right: 254px;
 }
 
 .box.center_carousel{
-  height: 500px;
+  position: relative;
+  left: calc( 50% - 126px )
 }
 
 .box.left_carousel h3{
   font-size: 35px;
   font-weight: 700;
-  line-height: 50px;
-  margin-bottom: 50px;
 }
 
 .box.right_carousel{
   font-size: 18px;
-  margin-bottom: 100px;
 }
 
 .box.right_carousel h6{
   font-size: 20px;
   font-weight: 700;
-}
-
-.box.left_carousel{
-  position: relative;
-  right: calc( ( 100% / 3 ) - 10px );
-}
-
-.box.center_carousel{
-  position: relative;
-  left: calc( ( 100% / 3 ) - 10px );
 }
 
 @media screen and (max-width:991px) {
@@ -226,27 +221,15 @@ a{
   }
 
   .box.left_carousel{
-    position: relative;
     right: 0;
   }
 
   .box.center_carousel{
-    position: relative;
     left: 0;
   }
 
-  .box.left_carousel h3{
-    font-size: 35px;
-    font-weight: 700;
-    line-height: 30px;
-    margin: 50px 0 0;
+  .left_carousel, .right_carousel{
+    min-height: 100px;
   }
-  .box.center_carousel img{
-    width: 50%;
-
-  }
-
-
 }
-
 /* /SEZIONE 2 #how */
